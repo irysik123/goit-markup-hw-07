@@ -34,6 +34,7 @@ h6 {
 img {
     display: block;
     max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -44,13 +45,11 @@ body {
 }
 
 .container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-   /*  outline: 2px solid tomato;  */
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .list {
     list-style: none;
@@ -204,7 +203,7 @@ header {
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), 
-    url(./images/backgroung-office.jpeg);
+    url(../images/backgroung-office.jpeg);
     background-color: var(--main-text-color);
     background-repeat: no-repeat;
     background-position: center;
@@ -265,15 +264,27 @@ header {
 /* --------------Skills section------------ */
 
 .skills {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .skills-list {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 72px;
 }
+
+.skills-list-title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: var(--second-header-color);
+}
+
 
 .visually-hidden {
     position: absolute;
@@ -289,7 +300,7 @@ header {
 }
 
 .skills-list-item {
-    width: calc((100%-72px)/4);
+    /* width: calc((100%-72px)/4); */
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -303,18 +314,15 @@ header {
 }
 
 .skills-icon-wrap {
-    background: #F4F4FD;
-    border-radius: 4px;
-    height: 112px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
+    display: none;
+    
 }
 
 /* --------------Mission section------------ */
-
 .mission {
+    display: none;
+}
+/* .mission {
     padding-bottom: 120px;
 }
 
@@ -337,12 +345,11 @@ header {
     text-transform: capitalize;
 
     color: var(--main-text-color);
-}
+} */
 
 /* --------------Titles------------ */
 
 
-.skills-list-title,
 .team-title-small,
 .filter-title-small {
     font-weight: 600;
@@ -356,13 +363,27 @@ header {
 /* --------------Team section------------ */
 
 .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 128px;
     background-color: #F4F4FD;
+}
+
+.team > .container {
+    padding-left: 82px;
+    padding-right: 82px;
 }
 
 .team-title {
     margin-bottom: 72px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    color: var(--main-text-color);
 }
 
 .team-title-small {
@@ -392,12 +413,13 @@ header {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .team-list-item {
-    width: 264px;
-}
+    width: 100%;
+/*     width: 264px;
+ */}
 
 /* --------------Social-icons------------ */
 
@@ -430,8 +452,8 @@ header {
 }
 /* --------------Customers------------ */
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .customers-title {
@@ -444,12 +466,16 @@ header {
 
 .customers-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
+/*     gap: 24px;
+ */      
     justify-content: center;
 }
 
-.customers-item {
-    width: calc((100%-120px)/6);
+.customers-item {  
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
@@ -484,11 +510,16 @@ header {
 
 .footer {
     display: flex;
-
-    padding-top: 100px;
-    padding-bottom: 100px;
+    
+    padding-top: 96px;
+    padding-bottom: 96px;
 
     background-color: var(--main-text-color);
+}
+
+.footer-logo {
+    justify-content: center;
+    display: grid;
 }
 
 .footer-info {
@@ -502,9 +533,12 @@ header {
     color: var(--footer-color);
 }
 
+
 .logo-white {
     margin-bottom: 16px;
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -520,6 +554,10 @@ header {
 
 .footer >.container{
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+
+    justify-content: center;
 
     font-weight: 500;
     font-size: 16px;
@@ -531,19 +569,21 @@ header {
 }
 
 .social-media {
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 
 .social-media-text {
     margin-bottom: 16px;
+    text-align: center;
 }
 
-.subscribe {
+/* .subscribe {
     margin-left: auto;
-}
+} */
 
 .subscribe > .social-media-text {
     margin-bottom: 16px;
+    text-align: center;
 }
 
 
@@ -576,12 +616,14 @@ header {
 
 .subscribe-form {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    justify-content: center;
 }
 
 .subscribe-input {
     height: 40px;
-    width: 264px;
+    width: 396px;
     padding: 8px 16px;
 
     font-weight: 400;

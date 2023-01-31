@@ -1,0 +1,86 @@
+/* --------------Team section------------ */
+@media screen and (min-width: 768px) and (max-width:1199px) {
+ 
+    .container {
+    max-width: 768px;
+  }
+/* --------------Skills section------------ */
+/* .skills > .container {
+    width: 736px;
+} */
+
+.skills-list {
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.skills-list-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.skills-list-title {
+    text-align: left;
+}
+
+    /* --------------Team section------------ */
+
+.team {
+    padding-top: 96px;
+    padding-bottom: 104px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+}
+
+.team > .container {
+    max-width: none;
+    padding-left: 108px;
+    padding-right: 108px;
+}
+
+.team-list-item {
+    width: calc((100% - 24px) / 2); 
+    }
+
+/* --------------CUSTOMERS section------------ */
+
+.customers-list {
+    column-gap: 24px;
+}
+
+.customers-item {
+    width: calc((100% - 48px) / 3);
+    height: 88px;
+}
+/* --------------FOOTER section------------ */
+.footer-logo {
+    justify-content: center;
+    display: inline-block;
+}
+
+.footer >.container{
+    column-gap: 24px;
+}
+
+.social-media-text {
+    text-align: left;
+}
+
+.subscribe > .social-media-text {
+    text-align: left;
+}
+
+.subscribe-input {
+    width: 264px;
+}
+
+.subscribe-form {
+    column-gap: 24px;
+    justify-content: center;
+}
+    
+}

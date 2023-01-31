@@ -1,0 +1,5 @@
+@media screen and (min-width: 420px) and (max-width:767px){
+    .team-list {
+        gap: 72px;
+    }
+}
