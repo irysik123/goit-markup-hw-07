@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<!--     <header>
+    <header>
         <div class="container header">
             <nav class="nav-header">
                 <a class="logo link" href="index.html"><span class="logo-item">Web</span>studio</a>
@@ -41,10 +41,76 @@
                     <a class="contacts-item link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
+            <button type="button" class="menu-open">
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./images/symbol-defs.svg#icon-hamburger"></use>
+                </svg>
+            </button>
         </div>   
+        <div class="mob-menu">
+            <div class="container">
+                <div>
+                    <button type="button" class="button modal-close-button" data-modal-close >
+                        <svg class="modal-close-icon" width="8px" height="8px">
+                            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <nav class="mob-nav-header">
+                        <ul class="mob-menu-list list" >
+                            <li class="mob-menu-list-item">
+                                <a class="mob-menu-item link" href="#">Studio</a> 
+                            </li>
+                            <li class="mob-menu-list-item">
+                                <a class="mob-menu-item link" href="./portfolio.html">Portfolio</a> 
+                            </li>                
+                            <li class="mob-menu-list-item">
+                                <a class="mob-menu-item link current" href="#">Contacts</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <ul class="mob-contacts-list list">
+                        <li class="mob-contacts-item">
+                            <a class="mob-contacts-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                         </li>
+                         <li class="mob-contacts-item">
+                            <a class="mob-contacts-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="mob-soc-list list">
+                        <li class="mob-menu-link-item">
+                            <a href="#" class="mob-menu-link link">
+                                <svg class="mob-menu-link-icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-menu-link-item">
+                            <a href="#" class="mob-menu-link link">
+                                <svg class="mob-menu-link-icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-menu-link-item">    
+                            <a href="#" class="mob-menu-link link">
+                                <svg class="mob-menu-link-icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                        <li class="mob-menu-link-item">
+                            <a href="#" class="mob-menu-link link">
+                                <svg class="mob-menu-link-icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
      </header>
- -->
-<!--     <section class="hero">
+
+    <section class="hero">
         <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="hero-button button" type="button" data-modal-open>
@@ -54,7 +120,7 @@
     
         </div>   
     </section>
- -->    
+    
     <section class="skills">
         <div class="container">
             <h2 class="visually-hidden">Our Skills</h2>
@@ -121,7 +187,10 @@
             <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-list-item">
-                                <img src="./images/mark_guerrero.jpeg" alt="mark_guerrero" width="264">
+                                <img srcset="./images/mark_guerrero.jpeg 1x, ./images/mark_guerrero-2x.jpeg 2x" 
+                                    src="./images/mark_guerrero.jpeg" 
+                                    alt="mark_guerrero" 
+                                    width="264">
                             <div class="card">
                                 <h3 class="team-title-small">Mark Guerrero</h3>
                                 <p class="team-description">Product Designer</p>
@@ -154,7 +223,10 @@
                             </div>
                     </li>
                     <li class="team-list-item">
-                                <img src="./images/tom_ford.jpeg" alt="tom_ford" width="264">
+                                <img srcset="./images/tom_ford.jpeg 1x, ./images/tom_ford-2x.jpeg 2x" 
+                                src="./images/tom_ford.jpeg" 
+                                alt="tom_ford" 
+                                width="264">
                             <div class="card">
                                 <h3 class="team-title-small">Tom Ford</h3>
                                 <p class="team-description">Frontend Developer</p>
@@ -188,7 +260,10 @@
                     </li>
 
                     <li class="team-list-item">
-                                <img src="./images/camila_garcia.jpeg" alt="camila_garcia" width="264">
+                                <img srcset="./images/camila_garcia.jpeg 1x, ./images/camila_garcia-2x.jpeg 2x" 
+                                src="./images/camila_garcia.jpeg" 
+                                alt="camila_garcia" 
+                                width="264">
                             <div class="card">
                                 <h3 class="team-title-small">Camila Garcia</h3>
                                 <p class="team-description">Marketing</p>
@@ -221,7 +296,7 @@
                             </div>
                     </li>
                     <li class="team-list-item">
-                                <img src="./images/daniel_wilson.jpeg" alt="daniel_wilson" width="264">
+                                <img srcset="./images/daniel_wilson.jpeg 1x, ./images/daniel_wilson-2x.jpeg 2x" src="./images/daniel_wilson.jpeg" alt="daniel_wilson" width="264">
                             <div class="card">
                                 <h3 class="team-title-small">Daniel Wilson</h3>
                                 <p class="team-description">UI Designer</p>
@@ -368,7 +443,7 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="button modal-close-button" data-modal-close >
                 <svg class="modal-close-icon" width="8px" height="8px">
@@ -454,7 +529,7 @@
                     <button type="submit" class="modal-submit-button button">Send</button>
                 </form>
         </div>
-    </div>
+    </div> -->
 
 
     <script src="./js/modal.js"></script>

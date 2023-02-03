@@ -1,9 +1,23 @@
-/* --------------Team section------------ */
 @media screen and (min-width: 768px) and (max-width:1199px) {
  
     .container {
     max-width: 768px;
   }
+
+  .header-list {
+    display: flex;
+}
+.header-contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+  /* --------------Hero section------------ */
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/hero-bg-tab.jpeg);
+  }
+
 /* --------------Skills section------------ */
 /* .skills > .container {
     width: 736px;
@@ -83,4 +97,13 @@
     justify-content: center;
 }
     
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/hero-bg-tab-2x.jpeg);
+  }
 }
