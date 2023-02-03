@@ -802,11 +802,17 @@ header {
 /* .subscribe {
     margin-left: auto;
 } */
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 16px;
+}
 
-.subscribe > .social-media-text {
+/* .subscribe > .social-media-text {
     margin-bottom: 16px;
     text-align: center;
-}
+} */
 
 
 .social-media-list {
@@ -845,7 +851,8 @@ header {
 
 .subscribe-input {
     height: 40px;
-    width: 396px;
+    width: 100%;
+    max-width: 396px;
     padding: 8px 16px;
 
     font-weight: 400;
