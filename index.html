@@ -41,17 +41,24 @@
                     <a class="contacts-item link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
-            <button type="button" class="menu-open">
+
+
+            <button 
+                class="menu-toggle js-open-menu" 
+                aria-expanded="false" 
+                aria-controls="mobile-menu"
+            >
                 <svg class="menu-open-icon" width="32" height="22">
                     <use href="./images/symbol-defs.svg#icon-hamburger"></use>
                 </svg>
             </button>
         </div>   
-        <div class="mob-menu">
+
+        <div class="mob-menu js-menu-container is-hidden" id="mobile-menu">
             <div class="container">
                 <div>
-                    <button type="button" class="button modal-close-button" data-modal-close >
-                        <svg class="modal-close-icon" width="8px" height="8px">
+                    <button type="button" class="button menu-close-button menu-toggle js-close-menu">
+                        <svg class="menu-close-icon" width="8px" height="8px">
                             <use href="./images/symbol-defs.svg#icon-close-black"></use>
                         </svg>
                     </button>
@@ -116,8 +123,6 @@
                 <button class="hero-button button" type="button" data-modal-open>
                     Order Service
                 </button>
-                
-    
         </div>   
     </section>
     
@@ -443,7 +448,7 @@
         </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="button modal-close-button" data-modal-close >
                 <svg class="modal-close-icon" width="8px" height="8px">
@@ -529,10 +534,10 @@
                     <button type="submit" class="modal-submit-button button">Send</button>
                 </form>
         </div>
-    </div> -->
+    </div>
 
 
     <script src="./js/modal.js"></script>
-
+    <script defer src="js/menu.js"></script>
 </body>
 </html>

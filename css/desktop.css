@@ -16,12 +16,18 @@
     margin-left: auto;
 }
 
+
+
 /* --------------Hero section------------ */
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), 
     url(../images/hero-bg-desk.jpeg);
   }
+
+.hero-title {
+    width: 500px;
+}
 
   
 /* --------------Skills section------------ */
