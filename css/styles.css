@@ -76,6 +76,7 @@ header {
  */   
     display: flex;
    align-items: center;
+   justify-content: space-between;
 }
 
 .nav-header {
@@ -261,7 +262,7 @@ header {
 
 }
 
-.mob-menu.is-hidden {
+.menu-container.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -287,7 +288,7 @@ header {
     padding-bottom: 40px;
 }
 
-.mob-menu > .container {
+.menu-container > .container {
     height: 100%;
     display: flex;
     flex-direction: column;
