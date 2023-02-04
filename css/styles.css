@@ -381,7 +381,6 @@ header {
 .mob-soc-list {
     margin-top: 48px;
     display: flex;
-    justify-content: space-between;
     gap: 56px;
 }
 .mob-menu-link-item {
