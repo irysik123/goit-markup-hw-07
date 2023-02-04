@@ -34,15 +34,38 @@
 }
   /* --------------Hero section------------ */
   .hero {
+    padding-bottom: 108px;
+    display: flex;
+    justify-content: center;
+
+    min-height: 436px;
+
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), 
     url(../images/hero-bg-tab.jpeg);
   }
+  .hero-button {
+    margin-top: 40px; 
+}
+.hero-title {
+    width: 494px;
+    overflow:visible;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: calc(60 / 56);
+    text-align: center;
+    letter-spacing: 0.02em;
 
+}
 /* --------------Skills section------------ */
 /* .skills > .container {
     width: 736px;
 } */
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
 
 .skills-list {
     justify-content: center;
@@ -82,6 +105,13 @@
     }
 
 /* --------------CUSTOMERS section------------ */
+.customers {
+    display: flex;
+    justify-content: center;
+
+    padding-left: 108px;
+    padding-right: 108px;
+}
 
 .customers-list {
     column-gap: 24px;
@@ -115,7 +145,22 @@
 
 .subscribe-form {
     column-gap: 24px;
+    justify-content: left;
+}
+
+/* --------------FOOTER section------------ */
+.footer {
     justify-content: center;
+}
+
+.footer >.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.subscribe {
+    width: 496px;
 }
     
 }
