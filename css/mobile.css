@@ -8,4 +8,8 @@
     .team-list {
         gap: 72px;
     }
+
+.subscribe-input{
+    width: 396px;
+}
 }

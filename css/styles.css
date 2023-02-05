@@ -412,8 +412,8 @@ header {
 
 /* --------------Hero section------------ */
 .hero {
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 112px;
+    padding-bottom: 112px;
 
     height: 432px;
     display: flex;

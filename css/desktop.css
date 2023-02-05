@@ -24,15 +24,15 @@
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
     min-height: 600px;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), 
     url(../images/hero-bg-desk.jpeg);
-    background-size: 1440px;
+    width: 100%;
   }
 
 .hero-title {
@@ -117,10 +117,10 @@
         padding-bottom: 120px;
     }
 
-    .team > .container {
+    /* .team > .container {
         padding-left: 0;
         padding-right: 0;
-    }
+    } */
     
     .team-list {
         display: flex;
